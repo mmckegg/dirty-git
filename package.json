@@ -1,6 +1,6 @@
 {
   "name": "dirty-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "List git repos that have dirty working directories (uncommited changes)",
   "global": true,
   "bin": {
