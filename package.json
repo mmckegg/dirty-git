@@ -1,0 +1,25 @@
+{
+  "name": "dirty-git",
+  "version": "0.0.0",
+  "description": "List git repos that have dirty working directories (uncommited changes)",
+  "global": true,
+  "bin": {
+    "dirty-git": "bin/dirty-git.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "dirty",
+    "search",
+    "working",
+    "directory"
+  ],
+  "author": "Matt McKegg",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^4.0.4",
+    "through": "^2.3.4"
+  }
+}
