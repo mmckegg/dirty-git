@@ -18,7 +18,9 @@
     "dirty",
     "search",
     "working",
-    "directory"
+    "directory",
+    "pending",
+    "commit"
   ],
   "author": "Matt McKegg",
   "license": "ISC",
