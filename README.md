@@ -3,7 +3,7 @@ dirty-git
 
 List git repos that have dirty working directories (uncommited changes)
 
-## Install
+## Install via [npm](https://npmjs.org/project/dirty-git)
 
 ```bash
 $ npm install --global dirty-git
@@ -23,7 +23,7 @@ $ dirty-git [options] [path]
   --untracked, -u       include all untracked file paths
   --staged, -s          show stats for staged files
   --tree, -t            show stats for work tree files
-  --depth, -d <number>  (not implemented)
+  --depth, -d <number>  nested sub folders to search (default: 3)
 ```
 
 ## API
@@ -53,3 +53,8 @@ var stream = dirtyGit( process.cwd(), options )
   error: null,
 }
 ```
+
+## Contributors
+
+- Matt McKegg
+- [Jonas Hermsmeier](https://github.com/jhermsmeier)

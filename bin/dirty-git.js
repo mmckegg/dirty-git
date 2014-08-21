@@ -11,7 +11,7 @@ program
   .option( '-u, --untracked', 'include all untracked file paths' )
   .option( '-s, --staged', 'show stats for staged files' )
   .option( '-t, --tree', 'show stats for work tree files' )
-  .option( '-d, --depth <n>', '(not implemented)' )
+  .option( '-d, --depth <n>', 'nested sub folders to search (default: 3)' )
   .parse( process.argv )
 
 var options = {
@@ -19,7 +19,7 @@ var options = {
   untracked: !!program.untracked,
   staged: !!program.staged,
   tree: !!program.tree,
-  depth: program.depth || 0,
+  depth: program.depth,
 }
 
 if( !options.staged && !options.tree )
