@@ -3,7 +3,7 @@ dirty-git
 
 List git repos that have dirty working directories (uncommited changes)
 
-## Install via [npm](https://npmjs.org/project/dirty-git)
+## Install via [npm](https://npmjs.org/package/dirty-git)
 
 ```bash
 $ npm install --global dirty-git
