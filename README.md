@@ -19,11 +19,12 @@ $ dirty-git [options] [path]
 ### CLI Options
 
 ```
-  --ignored, -i         include ignored files
-  --untracked, -u       include all untracked file paths
-  --staged, -s          show stats for staged files
-  --tree, -t            show stats for work tree files
-  --depth, -d <number>  nested sub folders to search (default: 3)
+  -i, --ignored    include ignored files
+  -u, --untracked  include all untracked file paths
+  -l, --symlinks   include symlinked repos in results
+  -s, --staged     show stats for staged files
+  -t, --tree       show stats for work tree files
+  -d, --depth <n>  nested sub folders to search (default: 3)
 ```
 
 ## API
@@ -48,6 +49,7 @@ var stream = dirtyGit( process.cwd(), options )
     { index: 'M', tree: ' ', path: '...' },
     ...
   ],
+  symlink: true | false,
   path: '...',
   relativePath: '...',
   error: null,

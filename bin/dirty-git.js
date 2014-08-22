@@ -9,6 +9,7 @@ program
   .usage( '[options] [path]' )
   .option( '-i, --ignored', 'include ignored files' )
   .option( '-u, --untracked', 'include all untracked file paths' )
+  .option( '-l, --symlinks', 'include symlinked repos in results')
   .option( '-s, --staged', 'show stats for staged files' )
   .option( '-t, --tree', 'show stats for work tree files' )
   .option( '-d, --depth <n>', 'nested sub folders to search (default: 3)' )
@@ -20,6 +21,7 @@ var options = {
   staged: !!program.staged,
   tree: !!program.tree,
   depth: program.depth,
+  symlinks: !!program.symlinks
 }
 
 if( !options.staged && !options.tree )
