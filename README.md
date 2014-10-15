@@ -22,6 +22,7 @@ $ dirty-git [options] [path]
   -i, --ignored    include ignored files
   -u, --untracked  include all untracked file paths
   -l, --symlinks   include symlinked repos in results
+  -r  --unreleased force include repos that have no current tag
   -s, --staged     show stats for staged files
   -t, --tree       show stats for work tree files
   -d, --depth <n>  nested sub folders to search (default: 3)

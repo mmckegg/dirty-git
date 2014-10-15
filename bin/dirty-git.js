@@ -10,6 +10,7 @@ program
   .option( '-i, --ignored', 'include ignored files' )
   .option( '-u, --untracked', 'include all untracked file paths' )
   .option( '-l, --symlinks', 'include symlinked repos in results')
+  .option( '-r, --unreleased', 'force include repos that have no current tag')
   .option( '-s, --staged', 'show stats for staged files' )
   .option( '-t, --tree', 'show stats for work tree files' )
   .option( '-d, --depth <n>', 'nested sub folders to search (default: 3)' )
@@ -18,6 +19,7 @@ program
 var options = {
   ignored: !!program.ignored,
   untracked: !!program.untracked,
+  unreleased: !!program.unreleased,
   staged: !!program.staged,
   tree: !!program.tree,
   depth: program.depth,
