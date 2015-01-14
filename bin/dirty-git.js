@@ -29,6 +29,6 @@ var options = {
 if( !options.staged && !options.tree )
   options.tree = true
 
-dirty( program.path || process.cwd(), options )
+dirty( program.args.shift() || process.cwd(), options )
   .pipe( new format( options ) )
   .pipe( process.stdout )
