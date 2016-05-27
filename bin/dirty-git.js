@@ -3,6 +3,7 @@ var dirty = require( '../' )
 var program = require( 'commander' )
 var package = require( '../package' )
 var format = require( '../lib/format' )
+var path = require( 'path' )
 
 program
   .version( package.version )
@@ -29,6 +30,8 @@ var options = {
 if( !options.staged && !options.tree )
   options.tree = true
 
-dirty( program.args.shift() || process.cwd(), options )
+var dirname = path.resolve( program.args.shift() || process.cwd() )
+
+dirty( dirname, options )
   .pipe( new format( options ) )
   .pipe( process.stdout )
