@@ -25,10 +25,10 @@
   "author": "Matt McKegg",
   "license": "ISC",
   "dependencies": {
-    "cli-color": "^0.3.2",
-    "commander": "^2.3.0",
+    "cli-color": "^1.1.0",
+    "commander": "^2.9.0",
     "derive": "^2.3.0",
-    "glob-stream": "~4.0.0",
-    "indent": "0.0.1"
+    "glob-stream": "~5.3.2",
+    "indent": "0.0.2"
   }
 }
