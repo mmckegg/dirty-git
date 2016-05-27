@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 var dirty = require( '../' )
 var program = require( 'commander' )
-var package = require( '../package' )
+var packageInfo = require( '../package' )
 var format = require( '../lib/format' )
 var path = require( 'path' )
 
 program
-  .version( package.version )
+  .version( packageInfo.version )
   .usage( '[options] [path]' )
   .option( '-i, --ignored', 'include ignored files' )
   .option( '-u, --untracked', 'include all untracked file paths' )
