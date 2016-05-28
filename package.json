@@ -2,33 +2,39 @@
   "name": "dirty-git",
   "version": "3.1.2",
   "description": "List git repos that have dirty working directories (uncommited changes)",
+  "author": "Matt McKegg",
+  "license": "MIT",
   "preferGlobal": true,
+  "keywords": [
+    "commit",
+    "directory",
+    "dirty",
+    "git",
+    "pending",
+    "search",
+    "working"
+  ],
+  "main": "index.js",
   "bin": {
     "dirty-git": "bin/dirty-git.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mmckegg/dirty-git.git"
-  },
-  "keywords": [
-    "git",
-    "dirty",
-    "search",
-    "working",
-    "directory",
-    "pending",
-    "commit"
-  ],
-  "author": "Matt McKegg",
-  "license": "ISC",
   "dependencies": {
     "cli-color": "^1.1.0",
     "commander": "^2.9.0",
     "derive": "^2.3.0",
     "glob-stream": "~5.3.2",
     "indent": "0.0.2"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/mmckegg/dirty-git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmckegg/dirty-git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmckegg/dirty-git/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
