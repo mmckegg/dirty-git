@@ -1,6 +1,6 @@
 {
   "name": "dirty-git",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "description": "List git repos that have dirty working directories (uncommited changes)",
   "author": "Matt McKegg",
   "license": "MIT",
