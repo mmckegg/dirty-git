@@ -1,11 +1,13 @@
-dirty-git
-===
+# dirty-git
+[![npm](https://img.shields.io/npm/v/dirty-git.svg?style=flat-square)](https://npmjs.com/dirty-git)
+[![npm license](https://img.shields.io/npm/l/dirty-git.svg?style=flat-square)](https://npmjs.com/dirty-git)
+[![npm downloads](https://img.shields.io/npm/dm/dirty-git.svg?style=flat-square)](https://npmjs.com/dirty-git)
 
 List git repos that have dirty working directories (uncommited changes)
 
-## Install via [npm](https://npmjs.org/package/dirty-git)
+## Install via [npm](https://npmjs.com/package/dirty-git)
 
-```bash
+```sh
 $ npm install --global dirty-git
 ```
 
@@ -59,5 +61,5 @@ var stream = dirtyGit( process.cwd(), options )
 
 ## Contributors
 
-- Matt McKegg
+- [Matt McKegg](https://github.com/mmckegg)
 - [Jonas Hermsmeier](https://github.com/jhermsmeier)
